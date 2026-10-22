@@ -1,0 +1,51 @@
+name: Bug report / Hata bildirimi
+description: Something does not work as the README says. / README'de anlatıldığı gibi çalışmayan bir şey.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Security problems: use **Security and quality > Report a vulnerability** instead (see SECURITY.md).
+        Güvenlik sorunları için herkese açık issue yerine **Security and quality > Report a vulnerability** kullanın (bkz. SECURITY.md).
+
+        Remove local paths from any output you paste; they contain your user name.
+        Yapıştırdığınız çıktıdan yerel yolları silin; kullanıcı adınızı içerir.
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition / Dil sürümü
+      options:
+        - skill-sleuth (English)
+        - skill-bulucu (Türkçe)
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: Installed via / Kurulum yöntemi
+      options:
+        - Claude Code plugin marketplace
+        - npx skills
+        - claude.ai upload
+        - --plugin-dir
+        - Other / Diğer
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: OS, Claude Code version, Python version / İşletim sistemi, Claude Code sürümü, Python sürümü
+      placeholder: "Windows 11, Claude Code 2.1.293 (desktop app), Python 3.12"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened, and what did you expect? / Ne oldu, ne bekliyordunuz?
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Command and output, if a script was involved / Script söz konusuysa komut ve çıktısı
+      render: text

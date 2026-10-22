@@ -1,0 +1,11 @@
+{
+  "name": "skill-bulucu",
+  "description": "Verilen işe uygun Claude skill'ini beş katmanda bulur (oturum listesi, yerel indeks, claude.ai, MCP, yalnız onayla aranan üçüncü taraf kayıtları); kurulu olmayan skill ya da plugin adayının kaynağını, popülerliğini ve yaşını gösterir, yeni ve popüler olmayanı eler, yalnız numaralı onayla kurar. Türkçe sürüm.",
+  "version": "0.1.1",
+  "author": {
+    "name": "ssakkaya"
+  },
+  "homepage": "https://github.com/ssakkaya/skill-sleuth",
+  "repository": "https://github.com/ssakkaya/skill-sleuth",
+  "license": "MIT"
+}

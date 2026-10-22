@@ -1,0 +1,32 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "skill-sleuth",
+  "description": "skill-sleuth (English) and skill-bulucu (Turkish): a Claude skill that finds the right skill for a task across five layers and installs only after numbered consent. Install one of the two, not both.",
+  "owner": {
+    "name": "ssakkaya"
+  },
+  "plugins": [
+    {
+      "name": "skill-bulucu",
+      "description": "Verilen işe uygun Claude skill'ini beş katmanda bulur (oturum listesi, yerel indeks, claude.ai, MCP, yalnız onayla aranan üçüncü taraf kayıtları); kurulu olmayan skill ya da plugin adayının kaynağını, popülerliğini ve yaşını gösterir, yeni ve popüler olmayanı eler, yalnız numaralı onayla kurar. Türkçe sürüm.",
+      "source": "./plugins/skill-bulucu",
+      "version": "0.1.1",
+      "author": {
+        "name": "ssakkaya"
+      },
+      "homepage": "https://github.com/ssakkaya/skill-sleuth",
+      "category": "productivity"
+    },
+    {
+      "name": "skill-sleuth",
+      "description": "Finds the right Claude skill for a task across five layers (session listing, local index, claude.ai, MCP, consent-gated third-party registries); shows source, popularity and age for every uninstalled skill or plugin candidate, filters out new and unpopular ones, installs only after numbered consent. English edition.",
+      "source": "./plugins/skill-sleuth",
+      "version": "0.1.1",
+      "author": {
+        "name": "ssakkaya"
+      },
+      "homepage": "https://github.com/ssakkaya/skill-sleuth",
+      "category": "productivity"
+    }
+  ]
+}

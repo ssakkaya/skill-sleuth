@@ -1,0 +1,4 @@
+# Sets no attributes on purpose: the Claude plugin directory stops validating a repository whose
+# attributes rewrite file contents. Files are committed with LF line endings. On Windows, clone with
+# `git clone -c core.autocrlf=false <url>` (CI sets core.autocrlf false before checkout);
+# tools/build_yayin.py checks line endings and byte order marks.

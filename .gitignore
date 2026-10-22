@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+
+# Packaged skills / archives (rebuilt from the tree, never committed)
+# tools/build_yayin.py --zip writes them to dist/v<version>/ (top level only)
+/dist/
+*.skill
+*.zip
+
+# Scratch and worker folders
+workers/
+scratch/
+
+# Caches (the scripts write theirs under %TEMP%\skill-sleuth on Windows or ~/.cache/skill-sleuth on macOS/Linux, but keep any stray copy out)
+.cache/
+*.cache
+skill_ara_cache.json
+dis_kaynak_github.json
+community-marketplace.json
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Private build patterns (kept outside the repository; never commit)
+yayin-private-patterns.txt

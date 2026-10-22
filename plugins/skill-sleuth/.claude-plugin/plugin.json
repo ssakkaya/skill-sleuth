@@ -1,0 +1,11 @@
+{
+  "name": "skill-sleuth",
+  "description": "Finds the right Claude skill for a task across five layers (session listing, local index, claude.ai, MCP, consent-gated third-party registries); shows source, popularity and age for every uninstalled skill or plugin candidate, filters out new and unpopular ones, installs only after numbered consent. English edition.",
+  "version": "0.1.1",
+  "author": {
+    "name": "ssakkaya"
+  },
+  "homepage": "https://github.com/ssakkaya/skill-sleuth",
+  "repository": "https://github.com/ssakkaya/skill-sleuth",
+  "license": "MIT"
+}
